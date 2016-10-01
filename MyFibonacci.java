@@ -15,7 +15,20 @@ public class MyFibonacci
  
          for(int i=0; i< febCount; i++)
          {
-                 System.out.print(feb[i] + " ");
+             System.out.print(feb[i] + " ");
+         }
+         //Using recursion
+         for(int i = 1; i<= 15; i++)
+         {
+            System.out.println( fibonacci(i) ); 
          }
     }
+     public static int fibonacci(int number)
+     {
+         if(number == 1 || number == 2)
+         {
+             return 1;
+         }
+         return fibonacci(number - 1) + fibonacci(number - 2);
+     }
 }
