@@ -2,26 +2,27 @@
 
 public class DecimalToBinary
 {
-    public void printBinaryFormat(int number)
-    {
-        int binary[] = new int[25];
+     public static void main(String []args)
+     {
+        decimalToBinary(5);
+     }
+     
+     public static void decimalToBinary(int input)
+     {
+        int decimal = input;
+        int binary[] = new int[100];
         int index = 0;
-        while(number > 0)
+        
+        while(decimal>0)
         {
-            binary[index] = number%2;
+            binary[index] = decimal % 2;
             index++;
-            number = number/2;
+            decimal = decimal / 2;
         }
-        for(int i = index-1;i >= 0;i--)
+        
+        for(int x = index-1; x>=0; x-- )
         {
-			// actual binary format is in reverse order
-            System.out.print(binary[i]);
+            System.out.print( binary[x] );
         }
-    }
-
-    public static void main(String a[])
-    {
-        DecimalToBinary dtb = new DecimalToBinary();
-        dtb.printBinaryFormat(25);// Output will be 11001
-    }
+     }
 }
