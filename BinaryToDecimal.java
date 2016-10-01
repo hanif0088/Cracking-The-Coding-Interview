@@ -1,31 +1,25 @@
 public class BinaryToDecimal
 {
-    public int getDecimalFromBinary(int binary)
-    {
-        int decimal = 0;
+     public static void main(String []args)
+     {
+        System.out.println( binaryToDecimal(111) );
+     }
+     
+     public static int binaryToDecimal(int input)
+     {
+        int binary = input;
+        int decimal = 0; 
+        int remainder = 0;
         int power = 0;
-        while(true)
+        
+        while( binary!= 0)
         {
-            if(binary == 0)
-            {
-                break;
-            }
-            else
-            {
-                int tmp = binary%10;
-                decimal = decimal + tmp*Math.pow(2, power);
-                binary = binary/10;
-                power++;
-            }
+            remainder = binary % 10;
+            decimal = decimal + (int) ( remainder * Math.pow(2,power) ) ;
+            power++;
+            
+            binary = binary/ 10;
         }
         return decimal;
-    }
-
-    public static void main(String a[])
-    {
-        BinaryToDecimal bd = new BinaryToDecimal();
-        System.out.println("11 ===> "+bd.getDecimalFromBinary(11));
-        System.out.println("110 ===> "+bd.getDecimalFromBinary(110));
-        System.out.println("100110 ===> "+bd.getDecimalFromBinary(100110));
-    }
+     }
 }
