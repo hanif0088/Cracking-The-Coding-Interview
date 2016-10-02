@@ -178,8 +178,7 @@ public class SinglyLinkedList
         LinkedList list = new LinkedList();
         list.insertAtStartNode( 1 );
         list.insertAtEndNode( 2 );
-        list.insertAtPosition(99, 2);
-        list.insertAtPosition(89, 2);
+        list.insertAtPosition(99, 2); // position >= 1 and position <= list.getSize()
         list.insertAtPosition(3, 3);
         list.insertAtPosition(4, 4);
         list.deleteAtPosition(2);
