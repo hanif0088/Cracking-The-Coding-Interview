@@ -110,7 +110,7 @@ class LinkedList
         listSize++;
     }
 
-    /*  Function to delete an element at position. Finding Position Time complexity O(1)  */
+    /*  Function to delete an element at position. Finding Position Time complexity O(n)  */
     public void deleteAtPosition(int position)
     {
         if (position == 1)
