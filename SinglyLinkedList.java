@@ -90,7 +90,7 @@ class LinkedList
         listSize++;
     }
 
-    /* Function to insert an element at position. Time complexity O(1)*/
+    /* Function to insert an element at position. Finding position Time complexity O(n)*/
     public void insertAtPosition(int value , int position)
     {
         Node midNode = new Node(value, null);
@@ -110,7 +110,7 @@ class LinkedList
         listSize++;
     }
 
-    /*  Function to delete an element at position. Time complexity O(1)  */
+    /*  Function to delete an element at position. Finding Position Time complexity O(1)  */
     public void deleteAtPosition(int position)
     {
         if (position == 1)
