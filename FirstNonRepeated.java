@@ -1,6 +1,6 @@
 /* Find The First Non Repeated Character In A String 
-   If the word "stress" is input  then it should print  't'   as output .
-   If the word "teeter" is input  then it should print  'r'   as output .
+   If the word "stress" is input  then it should print  't'  as output .
+   If the word "teeter" is input  then it should print  'r'  as output .
 */
 
 import java.util.HashMap;
