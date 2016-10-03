@@ -1,39 +1,29 @@
-// Calculating a factorial
-
 public class Factorial
 {
      public static void main(String []args)
      {
-        System.out.println(Factorial.factorial_iterative(5));
+        System.out.println( factorialLoop(3) );
+     }
 
-     }
-     
-     public static int factorial_iterative(int num)
+     //Using Recursion
+     static int factorialRecursion(int x)
      {
-         if ( num < 0 )
-         {
-             System.out.println("Factorial must be a positive integer.");
-             return 0;
-         }
-    
-         // Start at 1 since we're multiplying, not adding
-         int fact = 1;
-    
-         // Loop from 1-num and multiply each time to fact
-         for (int i = 1; i <= num; i++)
-         {
-             fact = fact*i;
-         }
-    
-         return fact;
-     }
-     
-     public static int factorial(int number)
-     {
-         if(number == 1 || number == 0)
+         //base case
+         if(x==0)
          {
              return 1;
          }
-         return number*factorial(number - 1);
+         return x*factorialRecursion(x-1);
+     }
+
+     //Using a loop
+     static int factorialLoop(int x)
+     {
+         int result = 1;
+         for(int a = x; a > 0; a--)
+         {
+             result = result * a;
+         }
+         return result;
      }
 }
