@@ -1,5 +1,5 @@
-/*two String are called anagram, if they contains same characters but on different order 
-e.g. army and mary, stop and pots etc. */
+/*two String are called anagram, if they contains same characters but on 
+different order e.g. army and mary, stop and pots etc. */
 
 import java.util.Arrays;
 
