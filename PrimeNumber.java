@@ -7,7 +7,7 @@ public class PrimeNumber
      
 	static boolean isPrimeNumber(int number)
 	{
-		for(int x=2; x < number/2; x++)
+		for(int x=2; x <= number/2; x++)
 		{
 			if( number%x == 0)
 			{
